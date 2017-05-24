@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="Keywords" content="" />
+    <meta name="renderer" content="webkit">
+    <meta name="Description" content="" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js?1"></script>
+    <![endif]-->
+    <!-- CNZZ 统计 -->
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255830973'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255830973%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <!-- CNZZ 统计 -->
+</head>
+<body>
+<header id="navigator">
+    <div class="container-fluid navbar nav-container">
+    <div class="row">
+        <div class="brand">
+            <a href="/app/todo" style="cursor: pointer;">
+                <img src="https://res-front-cdn.timetask.cn/release/images/logo@2x.70270fe8ec.png" height="32">
+            </a>
+        </div>
+        <div class="col-sm-9">
+            <ul class="nav nav-pills"><li class="nav-item active trigger-inside-modal-close" data-type="todo"><a class="nav-link type-body2-black" href="/app/todo">日程</a></li><li class="nav-item  trigger-inside-modal-close" data-type="kanban"><a class="nav-link type-body2-black" href="/app/kanban">计划</a></li><li class="nav-item  trigger-inside-modal-close" data-type="doc"><a class="nav-link type-body2-black" href="/app/doc/679271">笔记</a></li><li class="nav-item  trigger-inside-modal-close" data-type="company"><a class="nav-link type-body2-black" href="/app/company">公司</a></li></ul>
+        </div>
+        <div class="nav-right">
+            <img class="vip vip-btn tooltipstered" src="https://res-front-cdn.timetask.cn/release/images/none.2d19347c27.png" alt="vip" data-toggle="tooltip">
+            <span class="btn hidden hack-pay"></span>
+            <span class="btn pay-page-btn hidden"></span>
+            <span class="alertRingBtn" style="display: none"></span>
+            <div class="user-profile type-body2-black dropdown">
+                <div class="dropdown-toggle" data-toggle="dropdown">
+                    <img class="avatar" src="https://rishiqing-images.oss-cn-beijing.aliyuncs.com/avatar/_large_avatar1.png?1495526169123" alt="">
+
+                    <span class="name">nanli</span>
+                </div>
+                <ul class="userSettings dropdown-menu dropdown-menu-right">
+                    <li><a href="javascript:;" class="dropdown-item personalSettingBtn">个人设置</a></li>
+                    <!-- <li><a href="javascript:;" class="dropdown-item">帮助中心</a></li>
+                    <li><a href="javascript:;" class="dropdown-item">用户社区</a></li>
+                    <li><a href="javascript:;" class="dropdown-item">建议反馈</a></li>
+                    <li><a href="javascript:;" class="dropdown-item">下载应用</a></li>
+                    <li class="dropdown-divider"></li> -->
+                    <li class="dropdown-item version" data-auto-close="false">版本 v6.15.63</li>
+                    <li class="dropdown-divider"></li>
+                    <li><a href="/task/logout/index" data-bypass="" class="dropdown-item">退出</a></li>
+                </ul>
+            </div>
+            <ul class="menu-list">
+                <!--<li class="header-search"><i class="icon-search"></i><input type='text' class='type-body1-black' id='searchInput' placeholder='请输入搜索内容'/></li>-->
+                <li class="applicationBtn popover-toggle" style="margin-right: 8px;"><i class="icon-apps"></i></li>
+                <li class="showNotifications popover-toggle"><i class="icon-notifications"></i><span class="unRead-mesage-num" style="display: none;"></span></li>
+
+                <li class="dakaBtn"><i class="daka notDaka icon-ic_touch_app_black_24px"></i></li></ul>
+        </div>
+    </div>
+</div>
+</header>
+<div id="mainContent">
+    <div class="todo-view">
+    <div class="container-left-content">
+        <div class="storageBox animated RSQ_fadeInLeft">
+            <div class="nav_header">
+                <i class="glyphicon glyphicon-align-left nav-button"></i>
+                <span>收纳箱</span>
+                <!--<i class="glyphicon glyphicon-chevron-down"></i>-->
+            </div>
+            <div class="flex-side-bar">
+                <i class="glyphicon glyphicon-align-left nav-button"></i>
+
+                <div class="flex-content">
+                    <div class="kanbanName  createKanban ">收纳箱</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-right">
+
+    </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $('.nav-button').click(function() {
+            return $('.container-left-content').toggleClass("out");
+        });
+    });
+</script>
+
+</body>
+</html>
+
