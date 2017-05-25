@@ -298,7 +298,7 @@ previous button's border...
 }
 
 .fc-popover .fc-header { /* TODO: be more consistent with fc-head/fc-body */
-	padding: 2px 4px;
+	padding: 10px 4px;
 }
 
 .fc-popover .fc-header .fc-title {
@@ -533,10 +533,10 @@ temporary rendered events).
 	position: relative; /* for resize handle and other inner positioning */
 	display: block; /* make the <a> tag block */
 	font-size: .85em;
-	line-height: 2.5;
+	line-height: 2;
 	border: 1px solid #d1d1d1; /* default BORDER color */
 	font-weight: normal; /* undo jqui's ui-widget-header bold */
-    border-left:2px solid #ff5959;
+
 }
 
 .fc-event,
@@ -639,8 +639,8 @@ temporary rendered events).
 
 .fc-ltr .fc-h-event.fc-not-start,
 .fc-rtl .fc-h-event.fc-not-end {
-	margin-left: 0;
-	border-left-width: 0;
+	/*margin-left: 0;
+	border-left-width: 0;*/
 	padding-left: 1px; /* replace the border with padding */
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
@@ -649,7 +649,7 @@ temporary rendered events).
 .fc-ltr .fc-h-event.fc-not-end,
 .fc-rtl .fc-h-event.fc-not-start {
 	margin-right: 0;
-	border-right-width: 0;
+	/*border-right-width: 0;*/
 	padding-right: 1px; /* replace the border with padding */
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
@@ -717,6 +717,7 @@ be a descendant of the grid when it is being dragged.
 .fc-day-grid-event {
 	margin: 1px 2px 0; /* spacing between events and edges */
 	padding: 0 1px;
+    border-left:2px solid #ff5959;
 }
 
 tr:first-child > td > .fc-day-grid-event {
